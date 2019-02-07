@@ -16,7 +16,7 @@ io.on('connection', (socket) => {
   console.log('New user connected');
 
 //socket.emit from admin, now using the message.js file
-  socket.emit('newMessage', generateMessage('Admin', 'Welcome to the chat app'));
+  socket.emit('newMessage', generateMessage('Admin', 'Tap "Send Location" for a location url'));
 
 
 //socket.broadcast.emit from admin to room notifying new user joined, using message.js now
